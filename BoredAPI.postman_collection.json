@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "37bbcaec-e352-45f0-85fa-db7b8d475856",
+		"name": "BoredAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check_all_test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"    var jsonData = pm.response.json();",
+							"    var e = jsonData.type;    ",
+							"pm.test(\"Check_type\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.type).to.eql(e);",
+							"});",
+							"",
+							"    var jsonData = pm.response.json();",
+							"    var e = jsonData.activity;    ",
+							"pm.test(\"Check_activity\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.activity).to.eql(e);",
+							"});",
+							"",
+							"    var jsonData = pm.response.json();",
+							"    var e = jsonData.participants;    ",
+							"pm.test(\"Check_activity\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.participants).to.eql(e);",
+							"});",
+							"    var jsonData = pm.response.json();",
+							"    var e = jsonData.price;    ",
+							"pm.test(\"Check_activity\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.price).to.eql(e);",
+							"});",
+							"",
+							" var jsonData = pm.response.json();",
+							"    var e = jsonData.accessibility;    ",
+							"pm.test(\"Check_activity\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.accessibility).to.eql(e);",
+							"});",
+							"",
+							"",
+							"",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"",
+							"    "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "{{key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}api/activity?accessibility={{accessibility}}&type={{type}}&participants={{participants}}&price={{price}}&key={{key}}",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"activity"
+					],
+					"query": [
+						{
+							"key": "accessibility",
+							"value": "{{accessibility}}"
+						},
+						{
+							"key": "type",
+							"value": "{{type}}"
+						},
+						{
+							"key": "participants",
+							"value": "{{participants}}"
+						},
+						{
+							"key": "price",
+							"value": "{{price}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": ""
+		},
+		{
+			"key": "type",
+			"value": ""
+		},
+		{
+			"key": "participants",
+			"value": ""
+		},
+		{
+			"key": "price",
+			"value": ""
+		},
+		{
+			"key": "accessibility",
+			"value": ""
+		},
+		{
+			"key": "key",
+			"value": ""
+		}
+	]
+}
