@@ -1,0 +1,236 @@
+{
+  "id": "c37f0e4c-b30e-427d-aeac-072f93fd103f",
+  "version": "2.0",
+  "name": "diary",
+  "url": "https://diary.ru",
+  "tests": [{
+    "id": "916b5505-4cca-4466-b347-87d06a5d50f5",
+    "name": "test",
+    "commands": [{
+      "id": "a842534d-a144-4339-bf8c-2332f7cd176c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b2837cb-6718-4ff9-a47c-d6ba9207131b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcff958d-51bd-4f9d-81bc-3c929157aab8",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Вход",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.navbar-index > li:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//div[@id='navbar_user-collapse']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://diary.ru/user/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": "Вход"
+    }, {
+      "id": "09f847f9-4e42-4fa7-86bc-53ed4fe8912c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вход",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.navbar-index > li:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//div[@id='navbar_user-collapse']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://diary.ru/user/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31d431f3-88dd-4f1f-a9ce-8995eafbe6c0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Вход",
+      "targets": [
+        ["linkText=Вход", "linkText"],
+        ["css=.navbar-index > li:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Вход')]", "xpath:link"],
+        ["xpath=//div[@id='navbar_user-collapse']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://diary.ru/user/login')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d21efee-c057-44d1-b36d-c67449047c92",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-username",
+      "targets": [
+        ["id=loginform-username", "id"],
+        ["name=LoginForm[username]", "name"],
+        ["css=#loginform-username", "css:finder"],
+        ["xpath=//input[@id='loginform-username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b473f6b4-197a-4c08-8d9c-c3555ad34f5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-username",
+      "targets": [
+        ["id=loginform-username", "id"],
+        ["name=LoginForm[username]", "name"],
+        ["css=#loginform-username", "css:finder"],
+        ["xpath=//input[@id='loginform-username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "PandaAutoTest"
+    }, {
+      "id": "c501be5f-893a-4e6a-9f80-b93b253c8252",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginform-password",
+      "targets": [
+        ["id=loginform-password", "id"],
+        ["name=LoginForm[password]", "name"],
+        ["css=#loginform-password", "css:finder"],
+        ["xpath=//input[@id='loginform-password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d1e9e49-32d2-4380-9441-3b2433f388bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginform-password",
+      "targets": [
+        ["id=loginform-password", "id"],
+        ["name=LoginForm[password]", "name"],
+        ["css=#loginform-password", "css:finder"],
+        ["xpath=//input[@id='loginform-password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123qwerty"
+    }, {
+      "id": "5ebc3766-2e7b-4e85-813d-f54dd9e803cc",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "72e746f1-6dfa-4536-9b5b-7d0c9c75d018",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35361100-5564-4a57-a5bb-25ed7fd109c0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "529e6dd8-8019-4831-90c7-2aa2acee2120",
+      "comment": "",
+      "command": "click",
+      "target": "id=login_btn",
+      "targets": [
+        ["id=login_btn", "id"],
+        ["name=login-button", "name"],
+        ["css=#login_btn", "css:finder"],
+        ["xpath=//button[@id='login_btn']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c03e01c-97d7-4048-aabd-a2fee9e64086",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=PandaAutoTest",
+      "targets": [
+        ["linkText=PandaAutoTest", "linkText"],
+        ["css=.username > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PandaAutoTest')]", "xpath:link"],
+        ["xpath=//div[@id='navbar_user-collapse']/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://diary.ru/member/?3562061')])[2]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PandaAutoTest')]", "xpath:innerText"]
+      ],
+      "value": "PandaAutoTest"
+    }, {
+      "id": "a6483277-8715-4578-b6e9-6aa93869ba42",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Новости дневников",
+      "targets": [
+        ["linkText=Новости дневников", "linkText"],
+        ["css=.item:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Новости дневников')]", "xpath:link"],
+        ["xpath=//div[@id='page_content']/div[2]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://diary-spirit.diary.ru/p220940759.htm')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Новости дневников')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31a2af8d-93b0-41e9-a4f6-68e57a28333f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=blog_post_like_220940759",
+      "targets": [
+        ["id=blog_post_like_220940759", "id"],
+        ["css=#blog_post_like_220940759", "css:finder"],
+        ["xpath=//span[@id='blog_post_like_220940759']", "xpath:attributes"],
+        ["xpath=//div[@id='more-links220940759']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'14')]", "xpath:innerText"]
+      ],
+      "value": "14"
+    }, {
+      "id": "c2317d12-f149-4ad3-873d-8a6534c1ac02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.name_likes",
+      "targets": [
+        ["css=.name_likes", "css:finder"],
+        ["xpath=//div[@id='more-links220940759']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Нравится')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9b80d658-3b3e-4ea0-9f64-b7b57b5e7134",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["916b5505-4cca-4466-b347-87d06a5d50f5"]
+  }],
+  "urls": ["https://diary.ru/"],
+  "plugins": []
+}
